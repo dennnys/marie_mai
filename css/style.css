@@ -1,0 +1,334 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+body {
+	margin: 0;
+	padding: 0;
+	font: 1em 'Open Sans', sans-serif;
+	background: #E8EBF0;
+}
+/* =====Navigation=====*/
+/* le menu petit pour la resolution de <740px, > on le cache*/
+.meniu_petit span{
+	display: none;
+}
+/* /le menu petit pour la resolution de <740px, > on le cache*/
+nav {
+	background: #d74998;
+	width: 100%;
+	height: 50px;
+	display: block;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	text-align: center;
+	box-shadow: 0 5px 15px #999;
+}	
+nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding:6px 30px;
+	font-weight: bold;
+	color: #fff;
+}
+nav ul li a:hover {
+	border-bottom: 4px solid #fff;
+}
+/*=======Link Site Social========*/
+.social {
+	display: block;
+	position: fixed;
+	z-index: 2100;
+	top:0;
+	right: 5%;
+	height: 50px;
+}
+.social ul {
+	margin-top: 0px;
+}
+.social ul li {
+	list-style: none;
+	display: inline-block;
+}
+.social ul li a{
+	color: white;
+	font-size: 2.2em;
+	margin: 0 3px;
+}
+.social ul li a i {
+	transition: transform .2s;
+}
+.social ul li a i:hover {
+	transform: scale(1.16);
+	transition: transform .2s;
+}
+/*========== Audio .mp3 et .ogg=============*/
+audio {
+	display: block;
+	position: fixed;
+	z-index: 2100;
+	top: 10px;
+	left: 5%;
+	opacity: .3;
+	width: 250px;
+}
+/*======== <H1> <H2> <H3> =========*/
+h1 {
+	color: #d74998;
+	font-size: 4em;
+	line-height: 3em;
+	font-family: 'Kaushan Script', sans-serif;
+	text-shadow: 2px 2px #3d3d3d;
+}
+h2 {
+	text-align: center;
+	color: #777;
+}
+h3 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1em;
+	color: #777;
+}
+/*=========HEADER==========*/
+header {
+	border-bottom: 2px solid #999;
+}
+.w_header {
+	margin:50px auto 0;
+	max-width: 1000px;
+	height: 200px;
+	background-image: url('../images/mari1.jpeg');
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.w_header h1 {
+	margin-left: 100px;
+}
+.w_header p {
+	font-family: 'Kaushan Script', sans-serif;
+	color: #d74998;
+	margin-left: 80px;
+	margin-top: -100px;
+	font-style: italic;
+}
+/*=========BIOGRAPHI==========*/
+.biographi {
+	padding-top: 20px;
+	background: #fff;
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 2px solid #999;
+}
+.w_biographi {
+	margin: 0 auto 40px;
+	max-width: 1000px;
+	
+}
+.b_img {
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin: 50px 20px 10px 0;
+	border: 1px double #999;
+	box-shadow: 5px 5px 5px #999;
+}
+.b_img img {
+	width: 100%;
+	height: auto;
+}
+.exterior{
+	width: 100%;
+	text-align: right;
+}
+.exterior a {
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	color: #04007a;
+}
+.exterior a:hover {
+	text-decoration: underline;
+}
+/*=======ALBUM========*/
+.albums {
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 2px solid #999;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.w_albums {
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.a_albums {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.a_une {
+	width: 200px;
+	height: 510px;
+	padding: 15px 0px; 
+	text-align: center;
+	float: left;
+	border-radius: 15px;
+	transition: background .7s;
+}
+.a_une:hover {
+	background: #fff;
+	transition: background .7s;
+}
+.a_une img {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 6px double #999;
+}
+.a_une ol li {
+	font-size: .8em;
+	font-style: italic;
+	text-align: left;
+}
+/*=======Video========*/
+.video {
+	clear: both;
+	background: #fff;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	border-bottom: 2px solid #999;
+	overflow: hidden;
+}
+.w_video {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.v_video {
+	margin: 0 auto;
+	max-width: 800px;
+	max-height: 450px;
+	text-align: center;
+}
+.video iframe {
+	width: 800px;
+	height: 450px;
+}
+.v_list {
+	margin-left: 100px;
+}
+/*==========PHOTO===========*/
+.photo {
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 2px solid #999;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.w_photo {
+	max-width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+.p_instagram {
+	width: 100%;
+	text-align: center;
+}
+.p_img {
+	width: 300px;
+	display: inline-block;
+	margin: 10px 15px;
+	transition: transform .3s;
+	cursor: pointer;
+}
+.p_img:hover{
+	transform: scale(1.45);
+	transition: transform .3s;
+}
+.p_img img {
+	width: 100%;
+	height: auto;
+	border: 5px solid #fff;
+	border-radius: 5px;
+}
+/*===========Contact===========*/
+.contact {
+	overflow: hidden;
+	width: 100%;
+	/*border-bottom: 2px solid #999;*/
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background: #fff;
+}
+.w_contact {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.c_map_form{
+	overflow: hidden;
+}
+.c_map{
+	width: 57%;
+	float: left;
+	margin-right: 3%;
+}
+.c_map iframe {
+	width: 100%; 
+	height: 450px;
+	border: 0;
+} 
+.c_form{
+	width: 39%;
+	height: 450px;
+	background: #FFF5F5;
+	float: left;
+	border-radius: 15px;
+	border: 1px solid #999;
+}
+.c_form:hover {
+	background: #EDFFEF;
+}
+.c_form input, .c_form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+.c_form form {
+	width: 85%;
+	margin: 0 auto;
+}
+.f_text {
+	height: 30px;
+}
+.f_textarea {
+	height: 200px;
+	padding-top: 10px !important;
+}
+.f_buton {
+	height: 40px;
+}
+/*======Footer========*/
+footer {
+	background: -moz-linear-gradient(90deg, #999999 0%, #999999 92%, #FFFFFF 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(8%, #999999), color-stop(100%, #999999)); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, #999999 0%, #999999 92%, #FFFFFF 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, #999999 0%, #999999 92%, #FFFFFF 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, #999999 0%, #999999 92%, #FFFFFF 100%); /* ie10+ */
+	background: linear-gradient(0deg, #999999 0%, #999999 92%, #FFFFFF 100%); /* w3c */
+	width: 100%;
+	padding: 10px 0;
+}
+.w_footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*========Droit=========*/
+.droits {
+	font-size: .8em;
+}

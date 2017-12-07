@@ -1,0 +1,80 @@
+
+/*la résolution de navigateur est plus petite que 1190px*/
+@media screen and (max-width: 1190px) {
+	/* le player se cache et il rest juste le bouttonn play */
+	audio { 
+		width: 30px; 
+		left: 10px;
+	}
+	/* le menu principale se deplasse à gauche */
+	nav {
+		text-align: left;
+		padding-left: 20px;
+	}
+	nav ul li a {
+		padding: 6px 10px;
+	}
+}
+
+/*la résolution de navigateur est plus petite que 1000px*/
+@media screen and (max-width: 1000px) {
+	/* le content laisse 10px à droit et à gauche */
+	.w_biographi, .w_albums, .w_video, .w_photo, .w_contact {
+		padding: 0 10px;
+	}
+}
+
+/*la résolution de navigateur est plus petite que 740px*/
+@media screen and (max-width: 740px) {
+	/* le logo se dèplace un peu à gauche*/
+	.w_header h1 {
+	margin-left: 50px;
+	}
+	.w_header p {
+		margin-left: 40px;
+	}
+	/* le menu principale est cache */
+	nav ul {
+		display: none;
+	}
+	/* le boutonn MENU est afiché */
+	.meniu_petit span{
+		display: block;
+		text-transform: uppercase;
+		padding:5px 30px;
+		font-weight: bold;
+		color: #fff;
+		cursor: pointer;
+		margin-top: 10px;
+		margin-left: 25px;
+	}
+	/* le trois line à côté de MENU */
+	.meniu_petit span i {
+		font-size: 2em;
+		position: absolute;
+		margin: -5px 25px;
+	}
+	/* on installe le menu principale verticalement mais, il est cache*/
+	nav ul li {
+		display: block;
+		background: #d74998;
+		width: 150px;
+		padding: 5px 10px;
+	}
+	nav ul li a {
+		padding: 0px 10px;
+	}
+	/*l'affiche de meniu quand on fait hover sur le bouton MENU */
+	.meniu_petit:hover > ul {
+		display: block;
+	}
+	/* réduire la longueur et la largeur de la vidéo */
+	.video iframe {
+	width: 400px;
+	height: 225px;
+	}
+	/* map et formulaire sont dans les rangées différentes */
+	.c_map, .c_form {
+		width: 99%;
+	}
+}
